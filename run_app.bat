@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 setlocal
 
 echo ===================================================
@@ -29,7 +30,7 @@ if not exist "venv" (
 REM Activate Venv and Install Requirements
 echo [INFO] Checking dependencies...
 call venv\Scripts\activate.bat
-pip install -r requirements.txt >nul 2>&1
+pip install -r requirements.txt
 if %errorlevel% neq 0 (
     echo [ERROR] Failed to install requirements.
     pause

@@ -6,4 +6,4 @@ openpyxl>=3.1.2
 passlib
 streamlit-js-eval
 streamlit-calendar
-fpdf>=1.7.4
+fpdf>=1.7.2
